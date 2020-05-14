@@ -15,7 +15,7 @@ addNewForm.addEventListener("submit", (e) => {
 function clearForm() {
   DOM_AUTHOR.value = "";
   DOM_TITLE.value = "";
-  DOM_PAGES = "";
+  DOM_PAGES.value = "";
 }
 
 function renderLibararyBooks(books) {

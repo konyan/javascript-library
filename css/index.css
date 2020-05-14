@@ -22,11 +22,11 @@ p {
 }
 
 .card-container {
-  max-width: 900px;
+  max-width: 960px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  grid-gap: 48px;
-  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 32px;
+  margin: 2rem auto;
 }
 
 .card {
@@ -90,4 +90,10 @@ p {
 .child:nth-child(5) {
   --offset: 4;
   z-index: 0;
+}
+
+.form-container {
+  display: block;
+  margin: auto;
+  padding: 1rem;
 }
