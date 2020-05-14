@@ -1,5 +1,9 @@
 import { addNewForm, DOM_AUTHOR, DOM_TITLE, DOM_PAGES } from "./dom.js";
-import { addBookToLibrary, libraryData } from "./book.js";
+import {
+  addBookToLibrary,
+  libraryData,
+  removeBookFromLibrary,
+} from "./book.js";
 
 addNewForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -49,6 +53,7 @@ document
     let ID = event.target.parentNode.parentNode.parentNode.id;
     if (ID) {
       console.log("DELETE ITEM HERE", ID);
-      //TODO REMOVE PROCESS
+      removeBookFromLibrary(ID);
+      renderLibararyBooks(libraryData());
     }
   });
