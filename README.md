@@ -41,7 +41,7 @@ Download the project
 
 - Github [GitHub](https://github.com/gitnyasha)
 - Twitter: [@marshallchikari](https://twitter.com/marshallchikari)
-- Linkedin: [](https://linkedin.com/in/marshall-chikari-27532113a/)
+- Linkedin: [marshall-chikari](https://linkedin.com/in/marshall-chikari-27532113a/)
 
 ## Show your support
 
