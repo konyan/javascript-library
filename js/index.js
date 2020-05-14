@@ -1,27 +1,18 @@
-let myLibrary = [];
-
-function Book(title, author, pages) {
-  (this.title = title), (this.author = author), (this.pages = pages);
-}
-
-function addBookToLibrary() {
-  const myBook = new Book(title, author, pages);
-
-  myLibrary.push(myBook);
-}
+import { addNewForm, DOM_AUTHOR, DOM_TITLE, DOM_PAGES } from "./dom.js";
+import { addBookToLibrary, libraryData } from "./book.js";
 
 addNewForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const author = document.getElementById("author-input").value;
-  const title = document.getElementById("title").value;
-  const pages = document.getElementById("pages").value;
-  const read = document.getElementById("read").checked;
-  addBookToLibrary(logic.newBook(author, title, pages, read));
-  //   clearForm();
-  //   render(logic.library);
+  let title = DOM_TITLE.value;
+  let author = DOM_AUTHOR.value;
+  let pages = DOM_PAGES.value;
+  addBookToLibrary(title, author, pages);
+  console.log("FORM CLICK", libraryData());
+  clearForm();
 });
 
-function render() {
-  return myLibrary;
+function clearForm() {
+  DOM_AUTHOR.value = "";
+  DOM_TITLE.value = "";
+  DOM_PAGES = "";
 }
-console.log(myLibrary);
