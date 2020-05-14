@@ -22,7 +22,7 @@
               <input
                 type="text"
                 class="form-control mb-2"
-                id="inlineFormInput"
+                id="author"
                 placeholder="Jane Doe"
               />
             </div>
@@ -32,18 +32,18 @@
               >
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
-                  <div class="input-group-text">@</div>
+                  <div class="input-group-text"></div>
                 </div>
                 <input
                   type="text"
                   class="form-control"
-                  id="inlineFormInputGroup"
-                  placeholder="Username"
+                  id="title"
+                  placeholder="title of the book"
                 />
               </div>
             </div>
             <div class="col-auto">
-              <label class="sr-only" for="inlineFormInputGroup">Username</label>
+              <label class="sr-only" for="inlineFormInputGroup">Pages</label>
               <div class="input-group mb-2">
                 <input
                   type="number"
@@ -54,7 +54,11 @@
               </div>
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-2">
+              <button
+                type="button"
+                onclick="addBookToLibrary()"
+                class="btn btn-primary mb-2"
+              >
                 ADD BOOK
               </button>
             </div>
