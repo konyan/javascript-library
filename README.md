@@ -12,7 +12,7 @@ The porpuse of this project was to build an interface for a library using an arr
 
 ## Live Demo
 
-[Live](https://rawcdn.githack.com/konyan/javascript-library/164c328d4cfa715bde5643d27259152bf1fba54b/index.html)
+[Live](https://rawcdn.githack.com/konyan/javascript-library/5ab2b9248a00d876fc8a5e1064d1579557afcf2a/index.html)
 
 ## Getting Started
 
@@ -31,11 +31,11 @@ Download the project
 
 ## Authors
 
-👤 \*\*\*\*
+👤 **KoNyan**
 
-- Github: [](https://github.com/)
-- Twitter: [](https://twitter.com/)
-- Linkedin: [](https://www.linkedin.com/)
+- Github: [GitHub](https://github.com/konyan)
+- Twitter: [Twitter](https://www.linkedin.com/in/nyanlintun/)
+- Linkedin: [Linkedin](https://twitter.com/devkonyan)
 
 👤 **Marshall Nyasha Chikari**
 
