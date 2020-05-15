@@ -34,8 +34,8 @@ export function addBookToLibrary(title, author, pages) {
 }
 
 export function removeBookFromLibrary(index) {
-  var book = myLibrary[index];
-  myLibrary = myLibrary.filter((b) => b != book);
+  const book = myLibrary[index];
+  myLibrary = myLibrary.filter((b) => b !== book);
 }
 
 export function libraryData() {
