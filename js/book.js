@@ -28,7 +28,7 @@ function Book(title, author, pages, read) {
 }
 
 export function addBookToLibrary(title, author, pages) {
-  let book = new Book(title, author, pages, false);
+  const book = new Book(title, author, pages, false);
   console.log("BOOK", book);
   myLibrary.push(book);
 }
