@@ -17,7 +17,7 @@ h6 {
   font-weight: normal;
   color: #000;
   line-height: 1.25;
-  margin: 8px;
+  margin: 0;
 }
 
 .card-container {
@@ -115,6 +115,7 @@ h6 {
 .child__pages {
   position: absolute;
   bottom: 16px;
+  left: 16px;
   font-size: 12px;
 }
 
@@ -128,12 +129,39 @@ h6 {
   margin-top: 0.75rem;
 }
 
-.child__status-btn-read {
-  position: relative;
+.btn-child {
+  cursor: pointer;
+  position: absolute;
+  bottom: 24px;
+  left: 16px;
   display: inline-block;
   border-radius: 50px;
+}
+
+.btn-child:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px -4px 8px rgba(255, 255, 255, 0.8);
+  transform: translate(-4px, -4px);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.child__status-btn-read {
   color: white !important;
   background-color: #2a9df4;
   padding: 0.3rem 0.6rem;
   margin: 1rem 0;
+}
+
+.child__status-btn-unread {
+  color: #d3cfcf !important;
+  background-color: #848484;
+  padding: 0.3rem 0.6rem;
+  margin: 1rem 0;
+}
+
+.form-row {
+  justify-content: center;
 }
