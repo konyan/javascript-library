@@ -12,7 +12,6 @@ addNewForm.addEventListener("submit", (e) => {
   let author = DOM_AUTHOR.value;
   let pages = DOM_PAGES.value;
   addBookToLibrary(title, author, pages);
-  console.log("FORM CLICK", libraryData());
   clearForm();
   renderLibararyBooks(libraryData());
 });
@@ -60,10 +59,8 @@ document
   .addEventListener("click", function (event) {
     let trash_id = event.target.parentNode.parentNode.parentNode.id;
     let status_id = event.target.parentNode.parentNode.id;
-    console.log("EVENT", status_id);
 
     if (trash_id) {
-      console.log("DELETE ITEM HERE", trash_id);
       removeBookFromLibrary(trash_id);
       renderLibararyBooks(libraryData());
     }

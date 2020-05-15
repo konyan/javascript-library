@@ -39,7 +39,6 @@ export function removeBookFromLibrary(index) {
 
 export function changeStatusOfBook(index) {
   const book = myLibrary[index];
-  console.log(book);
   book.read = !book.read;
 }
 
